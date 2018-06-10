@@ -1,0 +1,31 @@
+apply plugin: "java"
+apply plugin: "application"
+
+repositories {
+	flatDir {
+		dirs "lib"
+	}
+}
+
+mainClassName = MAINCLASS // This is grabbed from gradle.properties
+
+dependencies {
+	compile name: "case02_queuing"
+	compile name: "modelutils"
+}
+
+run {
+	if (project.hasProperty("appArgs")) {
+		args Eval.me(appArgs)
+	}
+}
+
+jar {
+	manifest {
+		attributes "Main-Class": MAINCLASS
+	}
+	doFirst {
+		from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+	}
+	exclude 'META-INF/*.RSA', 'META-INF/*.SF','META-INF/*.DSA'
+}

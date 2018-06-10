@@ -1,0 +1,14 @@
+station:A B 300 60.0 # 1 person per 60 seconds aka 60 seconds between arrivals -> 0.016 arrivals per second
+station:B C 300 60.1
+station:C D 300 60.2
+station:D E 300 60.3
+station:E A 300 60.4
+
+train:Thomas A
+train:Bill C
+train:Jeremy E
+
+passengerSpawnSeed 4321
+stationPickerSeed 4321
+trainWaitTime 300
+boardTime 1

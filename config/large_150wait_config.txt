@@ -1,0 +1,36 @@
+station:A B 300 60.0 # 1 person per 60 seconds aka 60 seconds between arrivals -> 0.016 arrivals per second
+station:B C 300 60.1
+station:C D 300 60.2
+station:D E 300 60.3
+station:E F 300 60.4
+station:F G 300 60.5
+station:G H 300 60.6
+station:H I 300 60.7
+station:I J 300 60.8
+station:J K 300 60.9
+station:K L 300 60.11
+station:L M 300 60.22
+station:M N 300 60.33
+station:N O 300 60.44
+station:O P 300 60.55
+station:P Q 300 60.66
+station:Q R 300 60.77
+station:R S 300 60.88
+station:S T 300 60.99
+station:T A 300 60.999
+
+train:Thomas A
+train:Bill C
+train:Jeremy E
+train:Andrew G
+train:Bertha I
+train:Will K
+train:Sarah M
+train:Oliver O
+train:Clark Q
+train:Bruce S
+
+passengerSpawnSeed 4321
+stationPickerSeed 4321
+trainWaitTime 150
+boardTime 1

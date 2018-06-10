@@ -1,0 +1,5 @@
+# Gradle
+/build/
+/.gradle/
+/data/*
+!/data/plot_trains.gp
